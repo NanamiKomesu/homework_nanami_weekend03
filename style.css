@@ -1,0 +1,257 @@
+body,
+html {
+    width: 788px;
+    height: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+/*固定する背景*/
+div {
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+}
+
+.parallax-bg {
+    background-image: url("./img/mori.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*スクロールするコンテンツ*/
+.scrollbox {
+    background-color: #111;
+}
+
+header{
+  height: 20%; 
+  background-color: white;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+margin: 0;
+padding: 0;
+}
+.header-user .header-list{
+display: flex;
+}
+
+.header-list-item a{
+margin-left: 10px;
+}
+
+.heaader-list .header-list-item li{
+    margin-right: 10px;
+    
+}
+
+.header-user .header-list-item{
+font-size: 10px;
+font-style: normal;
+color: black;
+border-right:solid 1px black ;
+padding-right: 5px;
+}
+
+.header-user .header-list-items{
+border-style: none;
+}
+
+.parallax-bg  {
+position: relative;
+}
+.cmn-nav{
+    position: absolute;
+top: 0px;
+right: 0px;
+}
+
+.cmn-nav ul{
+    background-color: rgb(204, 204, 204, 0.5);
+padding: 0;   
+margin: 0;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 5px ;
+    font-size: 15px;
+    line-height: 160%;
+    /* background-color: rgb(204, 204, 204, 0.5); */
+}
+
+.top-kv{
+    color: white;
+    margin: 80px 0;
+width: auto;
+height: 500px;    
+text-align: center;
+background-image: url(./img/back-img.jpg);
+}
+
+.top-kv-title{
+font-size: 90px;
+margin-top: 100px;
+}
+.top-kv-subtitle{
+font-size: 30px;
+margin-top: 150px;
+font-weight: 900;
+}
+.article-fonttext{
+    height: 30px;
+width: 200px;
+    border:solid 1px #111;
+    font-size:15px;
+font-weight: 500;
+}
+.article-detail .article-fonttext a:hover{
+background-color: black;
+}
+
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding: 30px 50px;
+  }
+  /* h1 {
+    margin-bottom: 100px;
+  }
+  h2 {
+    margin-bottom: 50px;
+  } */
+  /* スライドする要素 */
+  .content {
+    width: 300px;
+    height: 300px;
+  }
+  /* .content:nth-child(1) {
+    background-color: tomato;
+  }
+  .content:nth-child(2) {
+    background-color: orange;
+  }
+  .content:nth-child(3) {
+    background-color: blue;
+  }
+  .content:nth-child(4) {
+    background-color: green;
+  } */
+  /* スライドレールの枠 */
+  .wrap {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 340px;
+    margin-bottom: 50px;
+  }
+  /* content4つをまとめたスライドブロック */
+  .slideshow {
+    display: flex;
+    /* -webkit-animation: loop-slide 20s infinite linear 1s both; */
+    animation: loop-slide 30s infinite linear 2s both;
+  }
+  /* @-webkit-keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  } */
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  /* ホバー時に動きを止める（パターン2・3）*/
+  .slide-paused:hover .slideshow {
+    /* -webkit-animation-play-state: paused; */
+    animation-play-state: paused;
+  }
+  /* ホバー時の装飾（パターン3） */
+  .content-hover {
+    transition: all 0.2s;
+    margin-right: 10px;
+  }
+  .content-hover:hover {
+    transform: translateY(-20px);
+    border-radius: 0 10%;
+    box-shadow: 0 3px 10px 0 #333;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+.more-btn {
+display: flex;
+flex-direction: column-reverse;
+opacity: 0.8;
+border-radius: 10%;
+}
+.view-more{
+    padding: 0.5em 0;
+font-size: 15px;
+font-weight: 500;
+}
+
+.middle-content .tracking-img{
+    margin: 80px 0;
+}
+.middle-content{
+    position: relative;
+    display: flex;
+justify-content: space-between;
+}
+.middle-text{
+    color: #111;
+position: absolute;
+top: 10px;
+right: 0;
+}
+.middle-title h3{
+font-size: 500px;
+}
+.middle-sub p{
+font-size: 300px;
+}
+
+
+footer{
+height: 20px;
+background-color: white;
+}
+footer .footer-text{
+    display: block;
+font-size: 10px;
+text-align: center;
+margin: 10px 0;
+font-weight: 800;
+color: #333;
+}
+
+@media screen and (min-width:768px){
+  /* .paralax-bg .bg1 .bg2 { */
+div{
+    width: 100vw;
+margin: 0;
+}
+}
